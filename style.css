@@ -159,7 +159,7 @@ nav ul li a {
 .cta-button:hover {
   background-color: #e60000;
 }
-.movie-card-1 {
+.movie-card-1, .movie-card-2, .movie-card-3, .movie-card-4, .movie-card-5, .movie-card-5, .movie-card-6 {
   background-color: #fff;
   padding: 20px;
   width: 200px;
@@ -172,67 +172,7 @@ nav ul li a {
   align-items: center;
 }
 
-  .movie-card-2 {
-    background-color: #fff;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .movie-card-3 {
-    background-color: #fff;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-     }
-     .movie-card-4 {
-      background-color: #fff;
-      padding: 20px;
-      width: 200px;
-      text-align: center;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-       }
-       .movie-card-5 {
-        background-color: #fff;
-        padding: 20px;
-        width: 200px;
-        text-align: center;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-         }
-         .movie-card-6 {
-          background-color: #fff;
-          padding: 20px;
-          width: 200px;
-          text-align: center;
-          border-radius: 10px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center;
-           }
+ 
 
 footer {
   padding: 50px 0;
@@ -282,10 +222,11 @@ footer {
 }
 
 .footer-apps .app-icons {
-  display: flex;
-  flex-direction: column; /* Görselleri alt alta sıralıyoruz */
-  align-items: flex-start; /* Sağ tarafa yaslama */
-  margin-top: 5px; /* Başlık ve görseller arasına boşluk ekledik */
+  display: inline-flex;
+  flex-direction: row; /* Görselleri yan yana sıralıyoruz */
+  justify-content: center;
+  align-items: center; 
+  gap: 20px; /* Başlık ve görseller arasına boşluk ekledik */
 }
 
 /* Sosyal medya ikonlarının boyutlarını küçültüyoruz */
@@ -296,8 +237,8 @@ footer {
 }
 
 .footer-apps .app-icons img {
-  width: 240px; /* Boyutları iki katına büyütüyoruz */
-  height: 240px;
+ max-width: 120px; 
+  height: 120px;
   object-fit: contain;
   margin-bottom: none; /* Görseller arasında boşluk */
 }
